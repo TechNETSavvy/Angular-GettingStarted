@@ -1,0 +1,76 @@
+ES Modules
+	Code files that import or export something
+	Organize our code files
+	Modularize our code
+	Promote code reuse
+	
+Angular Modules
+	Code files that organize the application into cohesive blocks of functionality
+	Organize our application
+	Modularize our application
+	Promote application boundaries
+	
+Angular Compilers
+	Angular (v8)
+		Just-In-Time Compiler (JIT)
+			Used during development
+			Compiles in the browser at runtime
+		Ahead-Of-Time Compiler (AOT)
+			Used for deployment
+			Pre-compiles before deploying
+		
+	Angular (v9+)
+		Due to the Ahead-Of-Time Compiler performance being improved it is now used for development as well
+		Just-In-Time Compiler (JIT)
+			Not used by default
+		Ahead-Of-Time Compiler(AOT)
+			Used during development
+				Pre-compiles before serving
+			Used for deployment
+				Pre-compiles before deploying
+
+Component Checklist
+	Class -> Code
+		Clear name
+			Use PascalCasing
+			Append 'Component' to the name
+		export keyword
+		Data in properties
+			Appropriate data type
+			Appropriate default
+			camelCase with first letter lowercase
+		Logic in methods
+			camelCase with first letter lowercase
+	Decorator -> Metadata
+		Component decorator
+			Prefix with @; Suffix with ()
+		selector: Component name in HTML
+			Prefix for clarity
+		template: View's HTML
+			Correct HTML syntax
+	Import what we need
+		Defines where to find the members that this component needs
+		import keyword
+		Member name
+			Correct spelling/casing
+		Module path
+			Enclose in quotes
+			Correct spelling/casing
+
+Something's Wrong! Checklist
+	F12 (Dev Tools)
+	Check the VS Code terminal window/terminal window
+	Stop and restart the compiler
+		Ctrl+C/Cmd+C
+		npm start
+	Re-check your code
+		HTML
+			Close tags
+			Angular directives are case sensitive
+		TypeScript
+			Close braces
+			TypeScript is case sensitive
+	Check blog for a solution
+		http://blogs.msmvps.com/deborahk/angular-2-getting-started-problem-solver/
+	Post to the course discussion
+		https://app.pluralsight.com/library/courses/angular-2-getting-started-update/discussion
